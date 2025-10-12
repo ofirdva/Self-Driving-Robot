@@ -1,0 +1,68 @@
+[0.037s] Invoking command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ofird/bumperbot_ws/src/bumperbot_cpp_examples -DCMAKE_INSTALL_PREFIX=/home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples
+[0.158s] -- The C compiler identification is GNU 13.3.0
+[0.289s] -- The CXX compiler identification is GNU 13.3.0
+[0.356s] -- Detecting C compiler ABI info
+[0.628s] -- Detecting C compiler ABI info - done
+[0.663s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.663s] -- Detecting C compile features
+[0.665s] -- Detecting C compile features - done
+[0.689s] -- Detecting CXX compiler ABI info
+[1.075s] -- Detecting CXX compiler ABI info - done
+[1.132s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.134s] -- Detecting CXX compile features
+[1.137s] -- Detecting CXX compile features - done
+[1.154s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.646s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.947s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.107s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.162s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.233s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.591s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.601s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.842s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.908s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.978s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.181s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.216s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.433s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.433s] -- Configured cppcheck include dirs: 
+[3.434s] -- Configured cppcheck exclude dirs and/or files: 
+[3.437s] -- Added test 'lint_cmake' to check CMake code style
+[3.441s] -- Added test 'uncrustify' to check C / C++ code style
+[3.441s] -- Configured uncrustify additional arguments: 
+[3.443s] -- Added test 'xmllint' to check XML markup files
+[3.447s] -- Configuring done (3.4s)
+[3.487s] -- Generating done (0.0s)
+[3.499s] -- Build files have been written to: /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples
+[3.523s] Invoked command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ofird/bumperbot_ws/src/bumperbot_cpp_examples -DCMAKE_INSTALL_PREFIX=/home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples
+[3.525s] Invoking command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples -- -j8 -l8
+[3.670s] [ 25%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[3.679s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[11.843s] [ 75%] [32m[1mLinking CXX executable simple_publisher[0m
+[12.198s] [ 75%] Built target simple_publisher
+[17.466s] [100%] [32m[1mLinking CXX executable simple_subscriber[0m
+[17.984s] [100%] Built target simple_subscriber
+[18.009s] Invoked command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples -- -j8 -l8
+[18.011s] Invoking command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples
+[18.028s] -- Install configuration: ""
+[18.028s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher
+[18.030s] -- Set non-toolchain portion of runtime path of "/home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher" to ""
+[18.031s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber
+[18.039s] -- Set non-toolchain portion of runtime path of "/home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber" to ""
+[18.039s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[18.040s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[18.040s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[18.040s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[18.041s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[18.041s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[18.041s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[18.041s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[18.042s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[18.042s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[18.042s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[18.043s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[18.044s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[18.044s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[18.044s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[18.049s] Invoked command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples

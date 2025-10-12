@@ -1,0 +1,52 @@
+[0.091s] Invoking command in '/home/ofird/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ofird/bumperbot_ws/build/bumperbot_controller -- -j8 -l8
+[0.704s] [100%] Built target simple_controller
+[0.792s] [100%] Built target ament_cmake_python_copy_bumperbot_controller
+[2.526s] running egg_info
+[2.659s] writing bumperbot_controller.egg-info/PKG-INFO
+[2.662s] writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+[2.662s] writing top-level names to bumperbot_controller.egg-info/top_level.txt
+[3.061s] reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[3.065s] writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[3.193s] [100%] Built target ament_cmake_python_build_bumperbot_controller_egg
+[3.250s] Invoked command in '/home/ofird/bumperbot_ws/build/bumperbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ofird/bumperbot_ws/build/bumperbot_controller -- -j8 -l8
+[3.255s] Invoking command in '/home/ofird/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ofird/bumperbot_ws/build/bumperbot_controller
+[3.296s] -- Install configuration: ""
+[3.297s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/pythonpath.sh
+[3.297s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/pythonpath.dsv
+[3.298s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller-0.0.0-py3.12.egg-info
+[3.298s] -- Installing: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller-0.0.0-py3.12.egg-info/top_level.txt
+[3.298s] -- Installing: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller-0.0.0-py3.12.egg-info/SOURCES.txt
+[3.299s] -- Installing: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller-0.0.0-py3.12.egg-info/PKG-INFO
+[3.299s] -- Installing: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller-0.0.0-py3.12.egg-info/dependency_links.txt
+[3.299s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller
+[3.312s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller/__init__.py
+[3.313s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller/simple_controller.py
+[3.475s] Listing '/home/ofird/bumperbot_ws/install/bumperbot_controller/lib/python3.12/site-packages/bumperbot_controller'...
+[3.498s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/include/include
+[3.499s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/include/include/bumperbot_controller
+[3.500s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/include/include/bumperbot_controller/simple_controller.hpp
+[3.503s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_controller
+[3.505s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch
+[3.505s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch/joystick_teleop.launch.py
+[3.505s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch/controller.launch.py
+[3.506s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config
+[3.506s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config/bumperbot_controllers.yaml
+[3.506s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config/joy_teleop.yaml
+[3.513s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config/joy_config.yaml
+[3.513s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_controller.py
+[3.513s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/package_run_dependencies/bumperbot_controller
+[3.514s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/parent_prefix_path/bumperbot_controller
+[3.514s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.sh
+[3.515s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.dsv
+[3.515s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/path.sh
+[3.515s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/path.dsv
+[3.519s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.bash
+[3.525s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.sh
+[3.525s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.zsh
+[3.526s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.dsv
+[3.526s] -- Installing: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/package.dsv
+[3.526s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/packages/bumperbot_controller
+[3.533s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/cmake/bumperbot_controllerConfig.cmake
+[3.533s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/cmake/bumperbot_controllerConfig-version.cmake
+[3.534s] -- Up-to-date: /home/ofird/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/package.xml
+[4.622s] Invoked command in '/home/ofird/bumperbot_ws/build/bumperbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ofird/bumperbot_ws/build/bumperbot_controller

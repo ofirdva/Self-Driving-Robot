@@ -1,0 +1,24 @@
+[0.039s] Invoking command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples -- -j8 -l8
+[0.202s] [ 50%] Built target simple_publisher
+[0.211s] [100%] Built target simple_subscriber
+[0.707s] Invoked command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples -- -j8 -l8
+[0.733s] Invoking command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples
+[0.753s] -- Install configuration: ""
+[0.754s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher
+[0.755s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber
+[0.756s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[0.756s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[0.757s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[0.757s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[0.757s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[0.758s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[0.758s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[0.759s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[0.759s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[0.759s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[0.760s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[0.760s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[0.761s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[0.761s] -- Up-to-date: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[0.762s] -- Installing: /home/ofird/bumperbot_ws/src/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[0.764s] Invoked command in '/home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ofird/bumperbot_ws/src/build/bumperbot_cpp_examples
