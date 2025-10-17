@@ -4,7 +4,9 @@ install/
 log/
 .colcon/
 *.log
-
+src/build/
+src/log/
+src/install/
 # Python
 __pycache__/
 *.pyc
