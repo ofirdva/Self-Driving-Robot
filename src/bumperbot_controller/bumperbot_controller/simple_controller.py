@@ -1,5 +1,3 @@
-#recives cmd_vel, computes left,right wheel velocities.
-#publishes wheel speeds to simple_velocity_controller
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
@@ -10,7 +8,8 @@ import numpy as np
 from rclpy.time import Time
 from rclpy.constants import S_TO_NS
 
-
+#recives cmd_vel, computes left,right wheel velocities.
+#publishes wheel speeds to simple_velocity_controller
 class SimpleController(Node):
 
     def __init__(self):
@@ -24,15 +23,13 @@ class SimpleController(Node):
         self.get_logger().info("Using wheel radius %d" % self.wheel_radius_)
         self.get_logger().info("Using wheel separation %d" % self.wheel_separation_)
 
-
         self.left_wheel_prev_pos_ = 0.0
         self.right_wheel_prev_pos_ = 0.0
-        self.prev_time_ = self.get_clock().now() 
-
+        self.prev_time_ = self.get_clock().now()
 
         self.wheel_cmd_pub_ = self.create_publisher(Float64MultiArray, "simple_velocity_controller/commands", 10)
         self.vel_sub_ = self.create_subscription(TwistStamped, "bumperbot_controller/cmd_vel", self.velCallback, 10)
-        self.joint_sub_ = self.create_subscription(JointState, "joint_states", self.jointCallback, 10)
+        self.joint_sub_ = self.create_subscription(JointState ,"joint_states", self.jointCallback, 10)
 
 
         self.speed_conversion_ = np.array([[self.wheel_radius_/2, self.wheel_radius_/2],
@@ -54,21 +51,21 @@ class SimpleController(Node):
 
     def jointCallback(self, msg):
         dp_left = msg.position[1] - self.left_wheel_prev_pos_
-        dp_right = msg.position [0] - self.right_wheel_prev_pos_
+        dp_right = msg.position[0] - self.right_wheel_prev_pos_
         dt = Time.from_msg(msg.header.stamp) - self.prev_time_
 
-        #update the values to the next execution
-        self.left_wheel_prev_pos_= msg.position[1]
-        self.right_wheel_prev_pos_ = msg.position[0]
+        self.left_wheel_prev_pos_ = msg.position[1]
+        self.right_wheel_prev_pos_= msg.position[0]
         self.prev_time_ = Time.from_msg(msg.header.stamp)
 
-        fi_left = dp_left / (dt.nanoseconds / S_TO_NS)
-        fi_right = dp_right / (dt.nanoseconds/ S_TO_NS)
+        fi_left = dp_left/ (dt.nanoseconds/ S_TO_NS)
+        fi_right = dp_right/ (dt.nanoseconds/ S_TO_NS)
 
-        linear = (self.wheel_radius_ * fi_right + self.wheel_radius_ * fi_left) / 2
-        angular = (self.wheel_radius_*fi_right-self.wheel_radius_*fi_left)/self.wheel_separation_
+        linear = (self.wheel_radius_ * fi_right + self.wheel_radius_*fi_left)/2
+        angular = (self.wheel_radius_*fi_right - self.wheel_radius_*fi_left)/ self.wheel_separation_
 
-        self.get_logger().info("linear: %f, angular: %f" %(linear,angular))
+        self.get_logger().info("linear: %f, angular: %f" % (linear, angular))
+
 
 def main():
     rclpy.init()
