@@ -23,13 +23,14 @@ class SimpleController(Node):
         self.get_logger().info("Using wheel radius %d" % self.wheel_radius_)
         self.get_logger().info("Using wheel separation %d" % self.wheel_separation_)
 
+
         self.left_wheel_prev_pos_ = 0.0
         self.right_wheel_prev_pos_ = 0.0
         self.prev_time_ = self.get_clock().now()
 
         self.wheel_cmd_pub_ = self.create_publisher(Float64MultiArray, "simple_velocity_controller/commands", 10)
         self.vel_sub_ = self.create_subscription(TwistStamped, "bumperbot_controller/cmd_vel", self.velCallback, 10)
-        self.joint_sub_ = self.create_subscription(JointState ,"joint_states", self.jointCallback, 10)
+        self.joint_sub_ = self.create_subscription(JointState ,"joint_states", self.jointCallback, 10)      
 
 
         self.speed_conversion_ = np.array([[self.wheel_radius_/2, self.wheel_radius_/2],
@@ -50,16 +51,21 @@ class SimpleController(Node):
         self.wheel_cmd_pub_.publish(wheel_speed_msg)
 
     def jointCallback(self, msg):
-        dp_left = msg.position[1] - self.left_wheel_prev_pos_
-        dp_right = msg.position[0] - self.right_wheel_prev_pos_
+        dp_left = msg.position[0] - self.left_wheel_prev_pos_
+        dp_right = msg.position[1] - self.right_wheel_prev_pos_
         dt = Time.from_msg(msg.header.stamp) - self.prev_time_
 
-        self.left_wheel_prev_pos_ = msg.position[1]
-        self.right_wheel_prev_pos_= msg.position[0]
+        self.left_wheel_prev_pos_ = msg.position[0]
+        self.right_wheel_prev_pos_= msg.position[1]
         self.prev_time_ = Time.from_msg(msg.header.stamp)
+        if dt.nanoseconds > 0:
 
-        fi_left = dp_left/ (dt.nanoseconds/ S_TO_NS)
-        fi_right = dp_right/ (dt.nanoseconds/ S_TO_NS)
+            fi_left = dp_left / (dt.nanoseconds/ S_TO_NS)
+            fi_right = dp_right / (dt.nanoseconds/ S_TO_NS)
+
+        else:
+            fi_left = 0
+            fi_right = 0
 
         linear = (self.wheel_radius_ * fi_right + self.wheel_radius_*fi_left)/2
         angular = (self.wheel_radius_*fi_right - self.wheel_radius_*fi_left)/ self.wheel_separation_
